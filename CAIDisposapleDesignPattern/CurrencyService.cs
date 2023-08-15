@@ -19,8 +19,29 @@ namespace CAIDisposapleDesignPattern
 
         public void Dispose()
         {
-            throw new NotImplementedException();
         }
+
+        // disposing : true (dispose managed + unmanaged)      
+        // disposing : false (dispose unmanaged + large fields)
+
+        protected virtual void Dispose(bool disposing) 
+        {
+            if (_disposed)
+                return;
+            // Dispose Logic
+            if (disposing)
+            {
+                // dispose managed resouces
+                httpClient.Dispose();
+            }
+            // unmanaged object
+            // set large fields to null
+            _disposed = true;
+
+        }
+
+    
+
 
         public string GetCurrencies()
         {
