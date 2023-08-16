@@ -6,7 +6,9 @@ using System.IO;
 //Example01();
 //Example02();
 //Example03();
-Example04();
+//Example04();
+Example05();
+
 
 
 
@@ -96,7 +98,30 @@ static void Example04()
     }
 }
 
+static void Example05()
+{
+    string path = "C:\\Users\\COMPUMARTS\\Desktop\\Sample3.txt";
+    using (var sr = new StreamReader(path))
+    {
+        while (sr.Peek() > 0)
+        {
+            Console.Write((char)sr.Read());
+        }
+    }
+}
 
+static void Example06()
+{
+    string path = "C:\\Users\\COMPUMARTS\\Desktop\\Sample3.txt";
+    using (var sr = new StreamReader(path))
+    {
+        string line;
+        if((line = sr.ReadLine()) is not null)    // -> != null
+        {
+            Console.WriteLine(line);
+        }
+    }
+}
 
 
 
