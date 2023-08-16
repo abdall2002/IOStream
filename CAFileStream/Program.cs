@@ -11,11 +11,8 @@ using System.IO;
 //Example06();
 //Example07();
 //Example08();
-Example09();
-
-
-
-
+//Example09();
+Example10();
 
 
 static void Example01()
@@ -156,6 +153,19 @@ static void Example09()
     var result = File.ReadAllText(path);
     Console.WriteLine(result);
 }
+
+static void Example10()
+{
+    string path = "C:\\Users\\COMPUMARTS\\Desktop\\Sample4.txt";
+
+    var lines = File.ReadAllLines(path);
+
+    foreach (var line in lines)
+    {
+        Console.WriteLine(line);
+    }
+}
+
 
 
 
