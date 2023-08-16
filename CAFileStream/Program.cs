@@ -10,7 +10,9 @@ using System.IO;
 //Example05();
 //Example06();
 //Example07();
-Example08();
+//Example08();
+Example09();
+
 
 
 
@@ -148,6 +150,13 @@ static void Example08()
     File.WriteAllText(path, text);
 }
 
+static void Example09()
+{
+    string path = "C:\\Users\\COMPUMARTS\\Desktop\\sample5.txt";
+    string text = "C# Is Amazing Language";
+    var result = File.ReadAllText(path);
+    Console.WriteLine(result);
+}
 
 
 
