@@ -30,8 +30,13 @@ using CAIDisposapleDesignPattern;
 
 // 3) more recommended  using .net framework 2+
 
-using (CurrencyService currencyService = new CurrencyService())
-{ 
-    var result = currencyService.GetCurrencies();
-    Console.WriteLine(result);
-}
+//using (CurrencyService currencyService = new CurrencyService())
+//{ 
+//    var result = currencyService.GetCurrencies();
+//    Console.WriteLine(result);
+//}
+
+// 4) using with no blocks c# 8.0
+CurrencyService currencyService = new CurrencyService();
+var result = currencyService.GetCurrencies();
+Console.WriteLine(result);

@@ -17,8 +17,12 @@ namespace CAIDisposapleDesignPattern
             httpClient = new HttpClient();
         }
 
-        public void Dispose()
+        
+        
+
+        ~CurrencyService()
         {
+            Dispose(false);
         }
 
         // disposing : true (dispose managed + unmanaged)      
@@ -40,7 +44,13 @@ namespace CAIDisposapleDesignPattern
 
         }
 
-    
+        public void Dispose()
+        {
+            // dipose() is called 100%
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
 
 
         public string GetCurrencies()
