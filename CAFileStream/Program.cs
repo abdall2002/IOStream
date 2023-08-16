@@ -3,7 +3,8 @@
 using System;
 using System.IO;
 
-Example01();
+//Example01();
+Example02();
 
 
 static void Example01()
@@ -36,7 +37,24 @@ static void Example02()
     string path = "C:\\Users\\COMPUMARTS\\Desktop\\Sample.txt";
     using (var fs = new FileStream(path, FileMode.Open, FileAccess.ReadWrite))
     {
+        byte[] data = new byte[fs.Length];
+        int numBytesToRead = (int)fs.Length;
+        int numBytesRead = 0;
+        while (numBytesToRead > 0)
+        {
+            int n = fs.Read(data, numBytesRead, numBytesToRead);
 
+            if (n == 0)
+                break;
+
+            numBytesToRead -= n;
+            numBytesRead += n;
+        }
+        foreach (var b in data)
+        {
+            Console.WriteLine(b);
+
+        }
     }
 }
 
