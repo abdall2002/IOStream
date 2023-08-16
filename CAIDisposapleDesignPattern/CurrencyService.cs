@@ -17,9 +17,6 @@ namespace CAIDisposapleDesignPattern
             httpClient = new HttpClient();
         }
 
-        
-        
-
         ~CurrencyService()
         {
             Dispose(false);
@@ -50,8 +47,6 @@ namespace CAIDisposapleDesignPattern
             Dispose(true);
             GC.SuppressFinalize(this);
         }
-
-
 
         public string GetCurrencies()
         {
