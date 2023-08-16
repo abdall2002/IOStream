@@ -55,6 +55,13 @@ static void Example02()
             Console.WriteLine(b);
 
         }
+
+        var newPath = "C:\\Users\\COMPUMARTS\\Desktop\\Sample1.txt";
+        using (var fsw = new FileStream(newPath, FileMode.OpenOrCreate, FileAccess.ReadWrite))
+        {
+            fsw.Write(data, 0, data.Length);
+        }
+
     }
 }
 
