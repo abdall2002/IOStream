@@ -1,0 +1,15 @@
+C:\Users\COMPUMARTS\source\repos\IOStream\CAFileStream\bin\Debug\net7.0\CAFileStream.exe
+C:\Users\COMPUMARTS\source\repos\IOStream\CAFileStream\bin\Debug\net7.0\CAFileStream.deps.json
+C:\Users\COMPUMARTS\source\repos\IOStream\CAFileStream\bin\Debug\net7.0\CAFileStream.runtimeconfig.json
+C:\Users\COMPUMARTS\source\repos\IOStream\CAFileStream\bin\Debug\net7.0\CAFileStream.dll
+C:\Users\COMPUMARTS\source\repos\IOStream\CAFileStream\bin\Debug\net7.0\CAFileStream.pdb
+C:\Users\COMPUMARTS\source\repos\IOStream\CAFileStream\obj\Debug\net7.0\CAFileStream.csproj.AssemblyReference.cache
+C:\Users\COMPUMARTS\source\repos\IOStream\CAFileStream\obj\Debug\net7.0\CAFileStream.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\COMPUMARTS\source\repos\IOStream\CAFileStream\obj\Debug\net7.0\CAFileStream.AssemblyInfoInputs.cache
+C:\Users\COMPUMARTS\source\repos\IOStream\CAFileStream\obj\Debug\net7.0\CAFileStream.AssemblyInfo.cs
+C:\Users\COMPUMARTS\source\repos\IOStream\CAFileStream\obj\Debug\net7.0\CAFileStream.csproj.CoreCompileInputs.cache
+C:\Users\COMPUMARTS\source\repos\IOStream\CAFileStream\obj\Debug\net7.0\CAFileStream.dll
+C:\Users\COMPUMARTS\source\repos\IOStream\CAFileStream\obj\Debug\net7.0\refint\CAFileStream.dll
+C:\Users\COMPUMARTS\source\repos\IOStream\CAFileStream\obj\Debug\net7.0\CAFileStream.pdb
+C:\Users\COMPUMARTS\source\repos\IOStream\CAFileStream\obj\Debug\net7.0\CAFileStream.genruntimeconfig.cache
+C:\Users\COMPUMARTS\source\repos\IOStream\CAFileStream\obj\Debug\net7.0\ref\CAFileStream.dll
