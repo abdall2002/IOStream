@@ -31,6 +31,14 @@ static void Example01()
     }
 
 }
+static void Example02()
+{
+    string path = "C:\\Users\\COMPUMARTS\\Desktop\\Sample.txt";
+    using (var fs = new FileStream(path, FileMode.Open, FileAccess.ReadWrite))
+    {
+
+    }
+}
 
 
 
