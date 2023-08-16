@@ -153,7 +153,6 @@ static void Example08()
 static void Example09()
 {
     string path = "C:\\Users\\COMPUMARTS\\Desktop\\sample5.txt";
-    string text = "C# Is Amazing Language";
     var result = File.ReadAllText(path);
     Console.WriteLine(result);
 }
