@@ -4,7 +4,9 @@ using System;
 using System.IO;
 
 //Example01();
-Example02();
+//Example02();
+Example03();
+
 
 
 static void Example01()
@@ -62,6 +64,21 @@ static void Example02()
             fsw.Write(data, 0, data.Length);
         }
 
+    }
+}
+
+static void Example03()
+{
+    string path = "C:\\Users\\COMPUMARTS\\Desktop\\Sample2.txt";
+    using (var fs = new FileStream(path, FileMode.OpenOrCreate, FileAccess.ReadWrite))
+    {
+        fs.Seek(20, SeekOrigin.Begin);
+        fs.WriteByte(65);
+        fs.Position = 0;
+        for (int i = 0; i < fs.Length; i++)
+        {
+            Console.WriteLine(fs.ReadByte());
+        }
     }
 }
 
