@@ -22,13 +22,12 @@ static void Example01()
         Console.WriteLine($"Position: {fs.Position}");     // print Position: 1
         fs.WriteByte(66); // B
         Console.WriteLine($"Position: {fs.Position}");     // print Position: 2
+        fs.WriteByte(13); // Enter
 
-        //fs.WriteByte(13); // Enter
-
-        //for (byte i = 65; i < 123; i++)
-        //{
-        //    fs.WriteByte(i);
-        //}
+        for (byte i = 65; i < 123; i++)
+        {
+            fs.WriteByte(i);
+        }
     }
 
 }
