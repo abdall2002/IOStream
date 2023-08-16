@@ -5,7 +5,9 @@ using System.IO;
 
 //Example01();
 //Example02();
-Example03();
+//Example03();
+Example04();
+
 
 
 
@@ -82,6 +84,17 @@ static void Example03()
     }
 }
 
+static void Example04()
+{
+    string path = "C:\\Users\\COMPUMARTS\\Desktop\\Sample3.txt";
+    using(var sw = new StreamWriter(path))
+    {
+        sw.WriteLine("This");
+        sw.WriteLine("is");
+        sw.WriteLine("C#");
+
+    }
+}
 
 
 
