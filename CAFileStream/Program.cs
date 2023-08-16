@@ -7,7 +7,10 @@ using System.IO;
 //Example02();
 //Example03();
 //Example04();
-Example05();
+//Example05();
+//Example06();
+//Example07();
+Example08();
 
 
 
@@ -116,11 +119,33 @@ static void Example06()
     using (var sr = new StreamReader(path))
     {
         string line;
-        if((line = sr.ReadLine()) is not null)    // -> != null
+        while((line = sr.ReadLine()) is not null)    // -> != null
         {
             Console.WriteLine(line);
         }
     }
+}
+
+static void Example07()
+{
+    string path = "C:\\Users\\COMPUMARTS\\Desktop\\sample4.txt";
+
+    string[] lines =
+    {
+        "C#",
+        "Is",
+        "Amazing",
+        "Language"
+    };
+    File.WriteAllLines(path, lines);
+
+}
+
+static void Example08()
+{
+    string path = "C:\\Users\\COMPUMARTS\\Desktop\\sample5.txt";
+    string text = "C# Is Amazing Language";
+    File.WriteAllText(path, text);
 }
 
 
